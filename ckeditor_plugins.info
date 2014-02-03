@@ -1,0 +1,6 @@
+name = CKeditor Plugins
+description = Misc plugins for CKEditor
+dependencies[] = ckeditor
+package = custom
+core = 7.x
+files[] = tests/ckeditor_plugins.test

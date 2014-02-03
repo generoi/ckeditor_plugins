@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * @file ckeditor_plugins.module
+ * TODO: Enter file description here.
+ */
+
+/**
+ * Implements hook_ckeditor_plugin().
+ */
+function ckeditor_plugins_ckeditor_plugin() {
+  return array(
+    'fontawesome' => array(
+      // Name of the plugin used to write it.
+      'name' => 'fontawesome',
+      // Description of the plugin - it would be displayed in the plugins management section of profile settings.
+      'desc' => t('Plugin for inserting Fontawesome Icons'),
+      // The full path to the CKEditor plugins directory, with the trailing slash.
+      'path' => drupal_get_path('module', 'ckeditor_plugins') . '/plugins/fontawesome/',
+      'buttons' => array(
+        'Fontawesome' => array(
+          'icon' => 'icon.png',
+          'label' => 'Add Fontawesome Icons',
+        )
+      )
+    ),
+    'snippets' => array(
+      // Name of the plugin used to write it.
+      'name' => 'snippets',
+      // Description of the plugin - it would be displayed in the plugins management section of profile settings.
+      'desc' => t('Plugin for inserting Snippets'),
+      // The full path to the CKEditor plugins directory, with the trailing slash.
+      'path' => drupal_get_path('module', 'ckeditor_plugins') . '/plugins/snippets/',
+      'buttons' => array(
+        'Snippets' => array(
+          'icon' => 'icon.jpg',
+          'label' => 'Add Snippets',
+        )
+      )
+    )
+  );
+}
