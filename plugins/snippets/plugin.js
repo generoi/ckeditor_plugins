@@ -14,7 +14,7 @@
         className: 'cke_format',
         multiSelect: false,
         panel: {
-          css: [CKEDITOR.skin.getPath('editor')].concat(editor.config.contentsCss),
+          css: [CKEDITOR.skin.getPath('editor')].concat(editor.config.contentsCss)
         },
         init: function() {
           for (var i = 0, l = snippets.length; i < l; i++) {
